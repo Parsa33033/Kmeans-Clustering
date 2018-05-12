@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.ScatterChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="542.0" prefWidth="739.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LayoutController">
+   <children>
+      <Button fx:id="AddPoints" layoutX="39.0" layoutY="456.0" mnemonicParsing="false" onAction="#button" text="Add Points" />
+      <ScatterChart fx:id="chart" layoutX="3.0" layoutY="35.0" prefHeight="368.0" prefWidth="733.0">
+        <xAxis>
+          <NumberAxis side="BOTTOM" fx:id="xAxis" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis fx:id="yAxis" side="LEFT" />
+        </yAxis>
+      </ScatterChart>
+      <Button fx:id="chooseClusters" layoutX="133.0" layoutY="456.0" mnemonicParsing="false" onAction="#clustering" text="Choose Cluster" />
+      <Button fx:id="runKmeansAlgorithm" layoutX="250.0" layoutY="456.0" mnemonicParsing="false" onAction="#kmeans" text="Run Kmeans Algorithm" />
+   </children>
+</AnchorPane>
